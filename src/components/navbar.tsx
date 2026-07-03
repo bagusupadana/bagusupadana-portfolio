@@ -23,7 +23,6 @@ export function Navbar() {
           className="flex items-center gap-2 font-display text-[1.05rem] font-bold tracking-tight"
         >
           {profile.name}
-          <span className="text-accent">{profile.initialsMark}</span>
         </a>
         <nav className="flex items-center gap-4 sm:gap-7">
           {links.map((link) => (
