@@ -24,7 +24,6 @@ export type SkillCategory = {
 
 export const profile = {
   name: "Ida Bagus Gede Upadana Manuaba",
-  initialsMark: "/",
   program: {
     id: "Program Studi Teknologi Informasi",
     en: "Information Technology Program",
