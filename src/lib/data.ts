@@ -6,7 +6,7 @@ export type LocalizedText = {
 export type ProjectItem = {
   year: string;
   category: LocalizedText;
-  title: string;
+  title: LocalizedText;
   summary: LocalizedText;
   background: LocalizedText;
   goal: LocalizedText;
@@ -67,7 +67,8 @@ export const projects: ProjectItem[] = [
   {
   year: "2025",
   category: { id: "Aplikasi Web", en: "Web Application" },
-  title: "Book2Stay — Platform Booking Penginapan",
+  title: { id: "Book2Stay — Platform Booking Penginapan", 
+           en: "Book2Stay — Accommodation Booking Platform" },
   summary: {
     id: "Platform booking online untuk mempermudah pencarian dan pemesanan kamar penginapan.",
     en: "An online booking platform that simplifies searching for and reserving accommodation.",
@@ -94,7 +95,8 @@ export const projects: ProjectItem[] = [
   {
   year: "2025",
   category: { id: "Administrasi Server & Jaringan", en: "Server & Network Administration" },
-  title: "BoreHouse — Sistem Manajemen Stok Barang",
+  title: { id: "BoreHouse — Sistem Manajemen Stok Barang", 
+           en: "BoreHouse — Stock Management System" },
   summary: {
     id: "Aplikasi manajemen inventaris berbasis web untuk mencatat stok barang secara digital.",
     en: "A web-based inventory management app for digitally recording stock items.",
@@ -121,7 +123,8 @@ export const projects: ProjectItem[] = [
   {
   year: "2025",
   category: { id: "UI/UX Design", en: "UI/UX Design" },
-  title: "Sinar Catering Real Food — Aplikasi Nutrition Tracker",
+  title: { id: "Sinar Catering Real Food — Aplikasi Nutrition Tracker", 
+           en: "Sinar Catering Real Food — Nutrition Tracker App" },
   summary: {
     id: "Case-based project berupa desain aplikasi untuk membantu user mengatur pola makan sehat dan memantau nutrisi harian.",
     en: "A case-based project featuring an app design that helps users maintain a healthy diet and track daily nutrition.",
