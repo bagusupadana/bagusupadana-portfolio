@@ -45,7 +45,7 @@ export function ProjectModal({
         ref={panelRef}
         role="dialog"
         aria-modal="true"
-        aria-label={project.title}
+        aria-label={project.title[lang]}
         tabIndex={-1}
         onClick={(event) => event.stopPropagation()}
         className="relative flex max-h-[92vh] w-full max-w-2xl flex-col overflow-y-auto rounded-t-sm border border-line bg-bg sm:rounded-sm"
@@ -62,7 +62,7 @@ export function ProjectModal({
         <div className="relative aspect-[16/9] w-full shrink-0">
           <Image
             src={project.image}
-            alt={project.title}
+            alt={project.title[lang]}
             fill
             sizes="(max-width: 640px) 100vw, 640px"
             className="object-cover"
@@ -80,7 +80,7 @@ export function ProjectModal({
           </div>
 
           <h3 className="mb-6 font-display text-[1.6rem] font-bold leading-tight tracking-tight sm:text-[2rem]">
-            {project.title}
+            {project.title[lang]}
           </h3>
 
           <dl className="grid grid-cols-1 gap-x-8 gap-y-5 sm:grid-cols-2">

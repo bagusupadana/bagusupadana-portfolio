@@ -26,7 +26,7 @@ export function Projects() {
 
       <div className="grid grid-cols-1 gap-7 sm:grid-cols-2 sm:gap-8 lg:grid-cols-3">
         {projects.map((project) => (
-          <Reveal key={project.title}>
+          <Reveal key={project.title.id}>
             <button
               type="button"
               onClick={() => setActive(project)}
@@ -35,7 +35,7 @@ export function Projects() {
               <div className="relative aspect-[16/9] overflow-hidden">
                 <Image
                   src={project.image}
-                  alt={project.title}
+                  alt={project.title[lang]}
                   fill
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   className="object-cover transition-transform duration-500 group-hover:scale-105"
@@ -53,7 +53,7 @@ export function Projects() {
                 </div>
 
                 <h3 className="mb-3 font-display text-[1.25rem] font-bold leading-tight tracking-tight">
-                  {project.title}
+                  {project.title[lang]}
                 </h3>
 
                 <p className="mb-5 flex-1 text-[0.92rem] leading-relaxed text-graphite">
