@@ -17,8 +17,6 @@ A personal portfolio for Bagus Upadana, following a single-page approach with li
 * [Getting Started](#getting-started)
 * [Available Scripts](#available-scripts)
 * [Content Management](#content-management)
-* [Deployment Notes](#deployment-notes)
-* [Author](#author)
 * [License](#license)
 
 ### Overview
@@ -159,8 +157,6 @@ Portofolio pribadi Bagus Upadana, mengikuti pendekatan single-page dengan mode t
 * [Memulai Project](#memulai-project)
 * [Script yang Tersedia](#script-yang-tersedia)
 * [Pengelolaan Konten](#pengelolaan-konten)
-* [Catatan Deployment](#catatan-deployment)
-* [Author](#author-1)
 * [Lisensi](#lisensi)
 
 ### Overview
