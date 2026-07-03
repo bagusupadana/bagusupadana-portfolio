@@ -140,12 +140,6 @@ Edit file:
 src/lib/dictionary.ts
 ```
 
-### Deployment Notes
-
-* Deployed for free on Vercel, connected to the GitHub repository.
-* Make sure `CONTACT_FORM_ENDPOINT` in `src/lib/config.ts` is filled in before deploying.
-* Run `npm run build` before deploying to check for errors.
-
 ### License
 
 © 2026 Bagus Upadana
@@ -287,12 +281,6 @@ Edit file:
 ```
 src/lib/dictionary.ts
 ```
-
-### Catatan Deployment
-
-* Di-deploy secara gratis ke Vercel, terhubung dengan repository GitHub.
-* Pastikan `CONTACT_FORM_ENDPOINT` di `src/lib/config.ts` sudah terisi sebelum deploy.
-* Jalankan `npm run build` sebelum deploy untuk validasi akhir.
 
 ### Lisensi
 
