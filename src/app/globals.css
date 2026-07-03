@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #eae8e1;
+  --bg-soft: #e1ded4;
+  --paper: #f4f2eb;
+  --ink: #1b1a17;
+  --graphite: #5e5c53;
+  --line: #c9c6bc;
+  --line-strong: #b4b0a4;
+  --accent: #1b3bd6;
+  --accent-2: #f2a104;
+  --accent-ring: rgba(27, 59, 214, 0.55);
+}
+
+.dark {
+  --bg: #131210;
+  --bg-soft: #1a1916;
+  --paper: #1c1b17;
+  --ink: #ece9e0;
+  --graphite: #a39e8e;
+  --line: #322f27;
+  --line-strong: #444136;
+  --accent: #7d93ff;
+  --accent-2: #f2b43a;
+  --accent-ring: rgba(125, 147, 255, 0.45);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+body {
+  background-color: var(--bg);
+  background-image: radial-gradient(var(--line) 1px, transparent 1px);
+  background-size: 26px 26px;
+  background-position: -1px -1px;
+  color: var(--ink);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+::selection {
+  background: var(--accent);
+  color: var(--paper);
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity 0.7s ease, transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal.in-view {
+  opacity: 1;
+  transform: none;
+}
+
+.cycle-exit {
+  transform: translateY(-28%);
+  opacity: 0;
+}
+
+.cycle-enter {
+  transform: translateY(28%);
+  opacity: 0;
+}
